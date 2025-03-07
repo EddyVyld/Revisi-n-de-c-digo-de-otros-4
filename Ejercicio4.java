@@ -1,15 +1,24 @@
 package com.generation;
 
-public class Codigo4 {
 
-    Scanner s = new Scanner();
+//Importe esta clase que no estaba antes
+import java.util.Scanner;
+
+public class Codigo4 {
+	
+	
+	public statatic void main (String[] args){
+
+    Scanner s = new Scanner(System.in); // Falto poner System.in para que permita ingresar datos al teclado
+    
+    String j1, j2; // Declare j1 y j2
     
     System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
-    String j1 = s.nextLine();
+    j1 = s.nextLine();
     
-    System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
-    Scanner s2 = new Scanner();
-    String j2 = s.nextLine();
+    System.out.print("Turno del jugador 2 (introduzca piedra, papel o tijeras): ");
+    /* Scanner s2 = new Scanner(); */   // No es necesario volver a declararla
+    j2 = s.nextLine();
     
     if (j1 == j2)) {
       System.out.println("Empate");
@@ -34,6 +43,8 @@ public class Codigo4 {
       }
       System.out.println("Gana el jugador " + g);
     }
-  
+      
+    }
+    
   
 }
